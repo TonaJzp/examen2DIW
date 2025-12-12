@@ -5,3 +5,61 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --blanco: hsl(0, 0%, 100%);
+    --negro: hsl(0, 0%, 0%);
+    --gris: hsl(0, 0%, 85%);
+}
+
+body {
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+}
+
+.encabezado {
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-size: cover;
+    min-height: 650px;
+    padding-top: 60px;
+    padding-right: 165px;
+    padding-bottom: 60px;
+    padding-left: 165px;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.logo {
+    width: 190px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--blanco);
+    padding-bottom: 6px;
+}
+
+.titulo-hero {
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 72px;
+    font-weight: 300;
+    padding: 40px;
+    max-width: 650px;
+    line-height: 1;
+}
