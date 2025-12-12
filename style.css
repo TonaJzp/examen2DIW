@@ -165,9 +165,240 @@ body {
     z-index: 2;
 }
 
+.capa-brillo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+}
+
+.item-galeria:hover .capa-brillo {
+  opacity: 0.7;
+}
+
+.item-galeria:hover h3 {
+  color: var(--negro);
+}
+
 .item-galeria:hover h3 {
     color: var(--negro);
 }
+
+.pie {
+    background-color: var(--negro);
+    padding: 44px 165px;
+}
+
+.contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logo-pie {
+    width: 144px;
+}
+
+.menu-pie {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.menu-pie a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+.menu-pie a:hover {
+    border-bottom: 2px solid var(--blanco);
+    padding-bottom: 6px;
+}
+
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 16px;
+}
+
+.redes-sociales a {
+    position: relative;
+}
+
+.redes-sociales a:hover{
+    border-bottom: 2px solid var(--blanco);
+    padding-bottom: 6px;
+}
+
+.copyright {
+    color: var(--gris);
+    font-size: 15px;
+}
+
+.boton-ver-todo-movil {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        background-image: url('./images/mobile/image-hero.jpg');
+        padding: 40px 24px;
+        min-height: 650px;
+    }
+
+    .navegacion {
+        margin-bottom: 170px;
+    }
+
+    .logo {
+        width: 144px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .boton-menu {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    .titulo-hero {
+        font-size: 40px;
+        padding: 24px;
+        max-width: 100%;
+    }
+
+    .seccion-interactiva {
+        padding: 96px 24px;
+        text-align: center;
+    }
+
+    .contenedor-interactivo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagen-interactiva {
+        width: 100%;
+    }
+
+    .contenido-interactivo {
+        position: static;
+        padding: 48px 0 0 0;
+        max-width: 100%;
+    }
+
+    .contenido-interactivo h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .seccion-creaciones {
+        padding: 0 24px 96px 24px;
+    }
+
+    .encabezado-creaciones {
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .encabezado-creaciones h2 {
+        font-size: 32px;
+    }
+
+    .boton-ver-todo {
+        display: none;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 34px;
+    }
+
+    .item-galeria {
+        height: 120px;
+    }
+
+    .item-galeria h3 {
+        font-size: 24px;
+        left: 20px;
+        bottom: 20px;
+        max-width: 120px;
+    }
+
+    .boton-ver-todo-movil {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--negro);
+        background-color: transparent;
+        padding: 13px 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 14px;
+    }
+
+    .boton-ver-todo-movil:hover {
+        background-color: var(--negro);
+        color: var(--blanco);
+    }
+
+    .pie {
+        padding: 56px 24px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .columna-izquierda {
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 48px;
+    }
+
+    .logo-pie {
+        width: 144px;
+    }
+
+    .menu-pie {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .columna-derecha {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .copyright {
+    color: var(--gris);
+}
+}
+
+
+
+
 
 
 
