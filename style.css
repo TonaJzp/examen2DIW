@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -21,14 +22,12 @@ body {
     background-image: url('./images/desktop/image-hero.jpg');
     background-size: cover;
     min-height: 650px;
-    padding-top: 60px;
-    padding-right: 165px;
-    padding-bottom: 60px;
-    padding-left: 165px;
+    padding: 60px 165px 60px 165px;
 }
 
 .navegacion {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 130px;
 }
@@ -47,6 +46,7 @@ body {
     color: var(--blanco);
     text-decoration: none;
     font-size: 15px;
+    position: relative;
 }
 
 .menu a:hover {
@@ -55,11 +55,50 @@ body {
 }
 
 .titulo-hero {
+    font-family: 'Josefin Sans', sans-serif;
     border: 2px solid var(--blanco);
     color: var(--blanco);
     font-size: 72px;
     font-weight: 300;
+    text-transform: uppercase;
     padding: 40px;
     max-width: 650px;
     line-height: 1;
 }
+
+.boton-menu {
+    display: none;
+}
+
+.seccion-interactiva {
+    padding: 120px 165px 120px 165px;
+}
+
+.contenedor-interactivo {
+    position: relative;
+    max-width: 1110px;
+}
+
+.contenido-interactivo {
+    background-color: var(--blanco);
+    position: absolute;
+    width: 540px;
+}
+
+.contenido-interactivo h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.contenido-interactivo p {
+    color: var(--gris);
+}
+
+
+
+
+
+
+
