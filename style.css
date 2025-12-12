@@ -82,6 +82,9 @@ body {
 .contenido-interactivo {
     background-color: var(--blanco);
     position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 96px 0 0 96px;
     width: 540px;
 }
 
@@ -89,12 +92,83 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 48px;
     font-weight: 300;
+    text-transform: uppercase;
     margin-bottom: 25px;
+    line-height: 1;
 }
 
 .contenido-interactivo p {
     color: var(--gris);
 }
+
+.seccion-creaciones {
+    padding: 0 165px 185px 165px;
+}
+
+.encabezado-creaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.encabezado-creaciones h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.boton-ver-todo {
+    border: 1px solid var(--negro);
+    background-color: transparent;
+    padding: 13px 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.boton-ver-todo:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.item-galeria {
+    position: relative;
+    cursor: pointer;
+    height: 450px;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    bottom: 32px;
+    left: 40px;
+    color: var(--blanco);
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    max-width: 150px;
+    line-height: 1;
+    z-index: 2;
+}
+
+.item-galeria:hover h3 {
+    color: var(--negro);
+}
+
 
 
 
